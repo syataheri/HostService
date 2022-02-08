@@ -56,9 +56,9 @@ a {
 
 .arrow-link {
   color: var(--color-accent);
-  text-transform: uppercase;
   font-size: 2rem;
   font-weight: bold;
+  text-transform: uppercase;
 }
 
 .arrow-link::after {
@@ -135,4 +135,25 @@ a {
   .list--tick .list__item {
     padding-left: 0.2rem;
   }
+}
+
+/* Icons */
+
+.icon {
+  width: 40px;
+  height: 40px;
+}
+
+.icon--primary {
+  fill: var(--color-primary);
+}
+
+.icon-container {
+  height: 64px;
+  width: 64px;
+  border-radius: 100%;
+  background: #f3f9fa;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
 }
