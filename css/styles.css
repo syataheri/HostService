@@ -4,6 +4,7 @@
   --color-accent: #ff3400;
   --color-headings: #1b0760;
   --color-body: #918ca4;
+  --color-body-darker: #5c5577;
   --color-border: #ccc;
   --border-raduis: 30px;
 }
@@ -358,9 +359,7 @@ a {
 /* Media Object */
 
 .media {
-  background: black;
   display: inline-flex;
-  color: #fff;
 }
 
 .media__body {
@@ -371,4 +370,49 @@ a {
   color: inherit;
   margin-top: 0;
   margin-bottom: 0.5rem;
+}
+
+/* Quotes */
+
+.quote {
+  font-size: 3rem;
+  font-style: italic;
+  color: var(--color-body-darker);
+  line-height: 1.3;
+}
+
+.quote__body::before {
+  content: open-quote;
+}
+
+.quote__body::after {
+  content: close-quote;
+}
+
+.quote__author {
+  font-size: 3rem;
+  font-weight: 500;
+  color: var(--color-headings);
+  font-style: normal;
+}
+.quote__autor-company {
+  font-size: 2rem;
+  font-style: normal;
+  opacity: 0.4;
+  color: var(--color-headings);
+  margin-top: 0.2rem;
+}
+
+@media screen and (min-width: 1024px) {
+  .quote {
+    font-size: 2rem;
+  }
+
+  .quote__author {
+    font-size: 2.4rem;
+  }
+
+  .quote__autor-company {
+    font-size: 1.6rem;
+  }
 }
