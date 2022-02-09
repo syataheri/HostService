@@ -158,6 +158,10 @@ a {
   fill: var(--color-primary);
 }
 
+.icon--accent {
+  fill: #fff;
+}
+
 .icon-container {
   height: 64px;
   width: 64px;
@@ -166,6 +170,10 @@ a {
   display: inline-flex;
   justify-content: center;
   align-items: center;
+}
+
+.icon-container--accent {
+  background: var(--color-accent);
 }
 
 /* Buttons */
@@ -389,6 +397,10 @@ a {
   content: close-quote;
 }
 
+.quote__body {
+  margin-top: 0;
+}
+
 .quote__author {
   font-size: 3rem;
   font-weight: 500;
@@ -414,5 +426,51 @@ a {
 
   .quote__autor-company {
     font-size: 1.6rem;
+  }
+}
+
+/* Grids */
+
+.grid {
+  display: grid;
+}
+
+@media screen and (min-width: 768px) {
+  .grid--coll2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .grid--coll3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Testimonial */
+.testimonail {
+  padding: 3rem;
+}
+.testimonail__image-container {
+  position: relative;
+}
+
+.testimonail__image {
+  width: 100%;
+}
+
+.testimonail__icon {
+  position: absolute;
+  top: 20px;
+  right: -30px;
+}
+
+@media screen and (min-width: 768px) {
+  .testimonail .quote,
+  .testimonail .quote__author {
+    font-size: 2.4rem;
+  }
+  .testimonail .quote {
+    margin-left: 6rem;
   }
 }
