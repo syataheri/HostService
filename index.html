@@ -15,24 +15,30 @@
     <title>CloudService</title>
   </head>
   <body>
-    <section class="block block--path-bottom container">
-      <header class="block__header">
-        <h2 class="block__heading">Heading</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, eum?
-        </p>
-      </header>
-    </section>
-    <section class="block block--dark block--skewed-right">
-      <div class="container">
+    <nav class="navBar collapse">
+      <img class="logo__image icon--primary" src="images/logo.svg" alt="" />
+      <svg class="icon icon--accent navBar__icon">
+        <use xlink:href="images/sprite.svg#menu"></use>
+      </svg>
+      <ul class="list navBar__list collapse__conten">
+        <li class="navBar__item"><a href="#">Hosting</a></li>
+        <li class="navBar__item"><a href="#">VPS</a></li>
+        <li class="navBar__item"><a href="#">Domain</a></li>
+        <li class="navBar__item"><a href="#">Pricing</a></li>
+      </ul>
+    </nav>
+    <section class="block block--dark hero">
+      <div class="container grid grid--coll2">
         <header class="block__header">
-          <h2 class="block__heading">Heading</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, eum?
+          <h2 class="block__heading">Cloud Hosting for Pros</h2>
+          <p class="hero__text">
+            Deploy your websites in less than 60 seconds.
           </p>
+          <a href="#" class="btn btn--accent btn--stretch">get started</a>
         </header>
+        <img class="hero__image" src="images/banner.png" alt="banner picture" />
       </div>
     </section>
   </body>
-  <script src="js/collapse.js" defer></script>
+  <script src="js/main.js" defer></script>
 </html>
