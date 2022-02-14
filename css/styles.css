@@ -506,6 +506,9 @@ a {
   .testimonail .quote {
     margin-left: 6rem;
   }
+  .testimonail .quote {
+    align-self: center;
+  }
 }
 
 /* Callouts */
@@ -567,9 +570,8 @@ a {
 }
 
 .collapse__conten {
-  max-height: 0;
-  overflow: hidden;
-  transition: all 0.3s;
+  max-height: 100vh;
+  opacity: 1;
 }
 
 .collapse--expanded .collapse__chevron {
@@ -578,8 +580,9 @@ a {
 }
 
 .collapse--expanded .collapse__conten {
-  max-height: 100vh;
-  opacity: 1;
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.3s;
 }
 
 /* Blocks */
@@ -589,8 +592,13 @@ a {
   padding: var(--padding-vertical) 2rem;
 }
 
+.block__text {
+  font-size: 2rem;
+}
+
 .block__heading {
   margin-top: 0;
+  font-size: 4rem;
 }
 
 .block--dark {
@@ -693,7 +701,7 @@ a {
 .hero .block__header {
   text-align: center;
 }
-.block__heading {
+.hero .block__heading {
   font-size: 6rem;
   margin-bottom: 0;
   font-weight: bold;
@@ -859,5 +867,79 @@ a {
   .block-showcase__image > img {
     width: auto;
     max-width: 700px;
+  }
+}
+
+/* Footer */
+
+.footer {
+  background: #232323;
+}
+
+.footer .collapse__heading {
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #fff;
+}
+
+.footer .collapse {
+  padding: 2rem;
+  border-bottom: 1px solid #393939;
+}
+
+.footer__brand {
+  margin-top: 5rem;
+  text-align: center;
+}
+
+.footer__copyright {
+  font-size: 2.1rem;
+  color: #fff;
+  opacity: 0.3;
+}
+
+.footer a {
+  color: #777;
+  transition: color 0.3s;
+}
+
+.footer a:hover {
+  color: #fff;
+}
+
+.footer .list {
+  margin: 0;
+}
+
+.footer__brand img {
+  width: 100%;
+  max-width: 230px;
+}
+
+@media screen and (min-width: 768px) {
+  .footer__sections {
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+  }
+  .footer .collapse__chevron {
+    display: none;
+  }
+  .footer .collapse__conten {
+    opacity: 1;
+    max-height: 100%;
+  }
+  .footer__brand {
+    margin-top: 1rem;
+    order: -1;
+  }
+  .footer__copyright {
+    font-size: 1.5rem;
+  }
+
+  .footer .collapse {
+    border: 0;
+  }
+
+  .footer .collapse__heading {
+    font-size: 1.6rem;
   }
 }
