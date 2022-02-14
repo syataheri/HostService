@@ -15,30 +15,74 @@
     <title>CloudService</title>
   </head>
   <body>
-    <nav class="navBar collapse">
-      <img class="logo__image icon--primary" src="images/logo.svg" alt="" />
-      <svg class="icon icon--accent navBar__icon">
-        <use xlink:href="images/sprite.svg#menu"></use>
-      </svg>
-      <ul class="list navBar__list collapse__conten">
-        <li class="navBar__item"><a href="#">Hosting</a></li>
-        <li class="navBar__item"><a href="#">VPS</a></li>
-        <li class="navBar__item"><a href="#">Domain</a></li>
-        <li class="navBar__item"><a href="#">Pricing</a></li>
-      </ul>
-    </nav>
-    <section class="block block--dark hero">
-      <div class="container grid grid--coll2">
-        <header class="block__header">
-          <h2 class="block__heading">Cloud Hosting for Pros</h2>
-          <p class="hero__text">
-            Deploy your websites in less than 60 seconds.
-          </p>
-          <a href="#" class="btn btn--accent btn--stretch">get started</a>
-        </header>
-        <img class="hero__image" src="images/banner.png" alt="banner picture" />
-      </div>
-    </section>
+    <div class="plans block container">
+      <section class="grid grid--coll3">
+        <div class="plan">
+          <article class="card">
+            <div class="card__header card--secondary">
+              <h3 class="plan__name">cardview</h3>
+              <span class="plan__price">$14</span>
+              <span class="plan__cycle">/month</span>
+              <span class="badges badges--secondary badges--small"
+                >14% off</span
+              >
+              <span class="plan__description">here we go ............</span>
+            </div>
+            <div class="card__body">
+              <ul class="list list--tick">
+                <li class="list__item">Unlimited Websites</li>
+                <li class="list__item">Unlimited Bandwidth</li>
+                <li class="list__item">100 GB SSD Storage</li>
+                <li class="list__item">3 GB RAM</li>
+              </ul>
+              <button class="btn btn--block btn--outline">buy now</button>
+            </div>
+          </article>
+        </div>
+        <div class="plan plan--popular">
+          <article class="card">
+            <div class="card__header card--primary">
+              <h3 class="plan__name">cardview</h3>
+              <span class="plan__price">$14</span>
+              <span class="plan__cycle">/month</span>
+              <span class="badges badges--primary badges--small">14% off</span>
+              <span class="plan__description">here we go ............</span>
+            </div>
+            <div class="card__body">
+              <ul class="list list--tick">
+                <li class="list__item">Unlimited Websites</li>
+                <li class="list__item">Unlimited Bandwidth</li>
+                <li class="list__item">100 GB SSD Storage</li>
+                <li class="list__item">3 GB RAM</li>
+              </ul>
+              <button class="btn btn--block btn--outline">buy now</button>
+            </div>
+          </article>
+        </div>
+        <div class="plan">
+          <article class="card">
+            <div class="card__header card--secondary">
+              <h3 class="plan__name">cardview</h3>
+              <span class="plan__price">$14</span>
+              <span class="plan__cycle">/month</span>
+              <span class="badges badges--secondary badges--small"
+                >14% off</span
+              >
+              <span class="plan__description">here we go ............</span>
+            </div>
+            <div class="card__body">
+              <ul class="list list--tick">
+                <li class="list__item">Unlimited Websites</li>
+                <li class="list__item">Unlimited Bandwidth</li>
+                <li class="list__item">100 GB SSD Storage</li>
+                <li class="list__item">3 GB RAM</li>
+              </ul>
+              <button class="btn btn--block btn--outline">buy now</button>
+            </div>
+          </article>
+        </div>
+      </section>
+    </div>
   </body>
   <script src="js/main.js" defer></script>
 </html>

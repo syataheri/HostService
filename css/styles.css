@@ -186,10 +186,18 @@ a {
   font-size: 1.8rem;
   font-weight: 600;
   padding: 2rem 3rem;
+  outline: 0;
   margin: 1rem 0;
   text-align: center;
   text-transform: uppercase;
   white-space: nowrap;
+}
+
+.btn .icon {
+  width: 2rem;
+  height: 2rem;
+  margin-right: 1rem;
+  vertical-align: middle;
 }
 
 .btn--outline {
@@ -258,7 +266,7 @@ a {
 .input-group .input {
   border: 0;
   flex-grow: 1;
-  padding: 1.5rem 1rem;
+  padding: 1.5rem 2rem;
 }
 
 .input-group .btn {
@@ -339,6 +347,22 @@ a {
 
 .plan--popular .card__header {
   position: relative;
+}
+
+.plan--popular {
+  transform: scale(1.1);
+}
+
+.plan {
+  transform: all 0.5s;
+}
+
+.plan:hover {
+  transform: scale(1.05);
+}
+
+.plan--popular:hover {
+  transform: scale(1.15);
 }
 
 .plan--popular .card__header::before {
@@ -702,4 +726,63 @@ a {
   .hero__image {
     margin-bottom: 8rem;
   }
+}
+
+/* Domain */
+
+.domain {
+  text-align: center;
+  padding: 6rem;
+}
+.domain .block {
+  padding: 0;
+}
+
+.domain__badge {
+  color: var(--color-headings);
+}
+
+.domain__grid--coll2 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 6rem);
+  font-size: 2rem;
+  font-weight: 600;
+  margin: 0 auto;
+  max-width: 760px;
+}
+
+.domain .badges {
+  margin: auto;
+}
+
+.domain__heading {
+  font-size: 4rem;
+}
+
+.domain .input-group {
+  box-shadow: 0 0 30px 20px #e6ebee;
+  border: 0;
+  margin: 4rem auto;
+  max-width: 760px;
+}
+@media screen and (min-width: 768px) {
+  .domain__grid--coll2 {
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  }
+}
+
+/* Plans Block */
+.plans .card {
+  max-width: 500px;
+  margin: 0 auto;
+}
+.plans .plan {
+  margin-right: 3rem;
+  margin-bottom: 4rem;
+  transition: all 0.5s;
+}
+
+.plans .grid {
+  gap: 8rem 2rem;
 }
