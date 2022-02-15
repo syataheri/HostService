@@ -861,7 +861,7 @@ a {
 
 /* Show Case Block */
 
-.block-showcase__image {
+.showcase__image {
   width: 100%;
 }
 
@@ -879,7 +879,7 @@ a {
   .block-showcase__image {
     justify-self: end;
   }
-  .block-showcase__image {
+  .showcase__image {
     width: auto;
     max-width: 700px;
   }
