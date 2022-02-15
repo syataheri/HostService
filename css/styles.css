@@ -861,6 +861,10 @@ a {
 
 /* Show Case Block */
 
+.block-showcase__image {
+  width: 100%;
+}
+
 .block-showcase .block__heading {
   color: #fff;
   font-size: 4rem;
@@ -875,7 +879,7 @@ a {
   .block-showcase__image {
     justify-self: end;
   }
-  .block-showcase__image > img {
+  .block-showcase__image {
     width: auto;
     max-width: 700px;
   }
